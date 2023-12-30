@@ -1,0 +1,92 @@
+[
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "1254 Number of Closed Islands.Solution1",
+        "description": "1254 Number of Closed Islands.Solution1",
+        "peekOfCode": "class Solution:\n    def closedIsland(self, grid: List[List[int]]) -> int:\n        vis=defaultdict(lambda:False)\n        n=len(grid)\n        m=len(grid[0])\n        def dfs(x,y, yet):\n            vis[(x,y)]=True\n            isedge=True\n            for i,j in ((x+1,y),(x-1,y),(x,y+1),(x,y-1)):\n                if 0<=i<n and 0<=j<m:",
+        "detail": "1254 Number of Closed Islands.Solution1",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "1689 Partitioning Into Minimum Number Of Deci-Binary Numbers.Solution1",
+        "description": "1689 Partitioning Into Minimum Number Of Deci-Binary Numbers.Solution1",
+        "peekOfCode": "class Solution:\n    def minPartitions(self, n: str) -> int:\n        return int(max(n))",
+        "detail": "1689 Partitioning Into Minimum Number Of Deci-Binary Numbers.Solution1",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "1720 Decode XORed Array.Solution1",
+        "description": "1720 Decode XORed Array.Solution1",
+        "peekOfCode": "class Solution:\n    def decode(self, encoded: List[int], first: int) -> List[int]:\n        decoded = [first]\n        for encode in encoded:\n            decoded.append(decoded[-1] ^ encode)\n        return decoded",
+        "detail": "1720 Decode XORed Array.Solution1",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "237 Delete Node in a Linked List.Solution",
+        "description": "237 Delete Node in a Linked List.Solution",
+        "peekOfCode": "class Solution:\n    def deleteNode(self, node):\n        node.val = node.next.val\n        node.next = node.next.next",
+        "detail": "237 Delete Node in a Linked List.Solution",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "2391 Minimum Amount of Time to Collect Garbage.Solution1",
+        "description": "2391 Minimum Amount of Time to Collect Garbage.Solution1",
+        "peekOfCode": "class Solution:\n    def cal(self, typer, garbage, travel):\n        count = 0\n        for house in garbage:\n            for g in house:\n                if g == typer:\n                    count += 1\n        time = 0\n        last_house = 0\n        for i in range(len(garbage)-1, -1, -1):",
+        "detail": "2391 Minimum Amount of Time to Collect Garbage.Solution1",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "2824 Count Pairs Whose Sum is Less than Target.Solution1",
+        "description": "2824 Count Pairs Whose Sum is Less than Target.Solution1",
+        "peekOfCode": "class Solution:\n    def countPairs(self, nums: List[int], target: int) -> int:\n        nop = 0\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                    if nums[i] + nums[j] < target:\n                        nop += 1\n        return nop",
+        "detail": "2824 Count Pairs Whose Sum is Less than Target.Solution1",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "2828 Check if a String Is an Acronym of Words.Solution1",
+        "description": "2828 Check if a String Is an Acronym of Words.Solution1",
+        "peekOfCode": "class Solution:\n    def isAcronym(self, words: List[str], s: str) -> bool:\n        if len(words) != len(s):\n            return False\n        for i in range(len(words)):\n            if words[i][0] != s[i]:\n                return False\n        return True",
+        "detail": "2828 Check if a String Is an Acronym of Words.Solution1",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "2894 Divisible and Non-divisible Sums Difference.Solution1",
+        "description": "2894 Divisible and Non-divisible Sums Difference.Solution1",
+        "peekOfCode": "class Solution:\n    def differenceOfSums(self, n: int, m: int) -> int:\n        num1 = 0\n        total = (n * (n + 1))/2\n        for val in range(1, n + 1):\n            if val % m != 0:\n                num1 += val\n        return int(2 * num1 - total)",
+        "detail": "2894 Divisible and Non-divisible Sums Difference.Solution1",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "771 Jewels and Stones.Solution1",
+        "description": "771 Jewels and Stones.Solution1",
+        "peekOfCode": "class Solution:\n    def numJewelsInStones(self, jewels: str, stones: str) -> int:\n        jewels=set(jewels)\n        noj = 0\n        for stone in stones:\n            if stone in jewels:\n                noj+=1\n        return noj",
+        "detail": "771 Jewels and Stones.Solution1",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "807 Max Increase to Keep City Skyline.Solution1",
+        "description": "807 Max Increase to Keep City Skyline.Solution1",
+        "peekOfCode": "class Solution:\n    def maxIncreaseKeepingSkyline(self, grid: List[List[int]]) -> int:\n        addedHeight = 0\n        for i in range(len(grid)):\n            for j in range(len(grid[i])):\n                maxHeightLR = grid[i][j]\n                maxHeightUD = grid[i][j]\n                for k in range(len(grid[i])):\n                    maxHeightLR = max(maxHeightLR, grid[i][k])\n                for k in range(len(grid)):",
+        "detail": "807 Max Increase to Keep City Skyline.Solution1",
+        "documentation": {}
+    }
+]
