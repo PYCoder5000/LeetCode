@@ -2,6 +2,15 @@
     {
         "label": "Solution",
         "kind": 6,
+        "importPath": "1221 Split a String in Balanced Strings.Solution1",
+        "description": "1221 Split a String in Balanced Strings.Solution1",
+        "peekOfCode": "class Solution:\n    def balancedStringSplit(self, s: str) -> int:\n        r = 0\n        sub = 0\n        for d in s:\n            if d == \"R\":\n                r += 1\n            else:\n                r -= 1\n            if r == 0:",
+        "detail": "1221 Split a String in Balanced Strings.Solution1",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
         "importPath": "1254 Number of Closed Islands.Solution1",
         "description": "1254 Number of Closed Islands.Solution1",
         "peekOfCode": "class Solution:\n    def closedIsland(self, grid: List[List[int]]) -> int:\n        vis=defaultdict(lambda:False)\n        n=len(grid)\n        m=len(grid[0])\n        def dfs(x,y, yet):\n            vis[(x,y)]=True\n            isedge=True\n            for i,j in ((x+1,y),(x-1,y),(x,y+1),(x,y-1)):\n                if 0<=i<n and 0<=j<m:",
@@ -29,6 +38,24 @@
     {
         "label": "Solution",
         "kind": 6,
+        "importPath": "2315 Count Asterisks.Solution1",
+        "description": "2315 Count Asterisks.Solution1",
+        "peekOfCode": "class Solution:\n    def countAsterisks(self, s: str) -> int:\n        count = 0\n        allow_count = True\n        for l in s:\n            if l == \"|\":\n                allow_count = not allow_count\n            if allow_count and l == \"*\":\n                count += 1\n        return count",
+        "detail": "2315 Count Asterisks.Solution1",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "2325 Decode the Message.Solution1",
+        "description": "2325 Decode the Message.Solution1",
+        "peekOfCode": "class Solution:\n    def decodeMessage(self, key: str, message: str) -> str:\n        decoded_dict = {' ': ' '}\n        alphabet = \"abcdefghijklmnopqrstuvwxyz\"\n        decoded_m = \"\"\n        for letter in key:\n            if alphabet == \"\":\n                break\n            if letter not in decoded_dict.keys():\n                decoded_dict[letter] = alphabet[0]",
+        "detail": "2325 Decode the Message.Solution1",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
         "importPath": "237 Delete Node in a Linked List.Solution",
         "description": "237 Delete Node in a Linked List.Solution",
         "peekOfCode": "class Solution:\n    def deleteNode(self, node):\n        node.val = node.next.val\n        node.next = node.next.next",
@@ -42,6 +69,15 @@
         "description": "2391 Minimum Amount of Time to Collect Garbage.Solution1",
         "peekOfCode": "class Solution:\n    def cal(self, typer, garbage, travel):\n        count = 0\n        for house in garbage:\n            for g in house:\n                if g == typer:\n                    count += 1\n        time = 0\n        last_house = 0\n        for i in range(len(garbage)-1, -1, -1):",
         "detail": "2391 Minimum Amount of Time to Collect Garbage.Solution1",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "2520 Count the Digits That Divide a Number.Solution1",
+        "description": "2520 Count the Digits That Divide a Number.Solution1",
+        "peekOfCode": "class Solution:\n    def countDigits(self, num: int) -> int:\n        temp = num\n        count = 0\n        while temp != 0:\n            if num % (temp % 10) == 0:\n                count += 1\n            temp //= 10\n        return count",
+        "detail": "2520 Count the Digits That Divide a Number.Solution1",
         "documentation": {}
     },
     {
