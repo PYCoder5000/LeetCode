@@ -29,6 +29,15 @@
     {
         "label": "Solution",
         "kind": 6,
+        "importPath": "1302 Deepest Leaves Sum.Solution1",
+        "description": "1302 Deepest Leaves Sum.Solution1",
+        "peekOfCode": "class Solution:\n    def deepestLeavesSum(self, root: Optional[TreeNode]) -> int:\n        self.result = 0\n        self.deepest = 1\n        self.dfs(root, 1)\n        return self.result\n    def dfs(self, root, curr_depth):\n        if root == None:\n            return\n        self.dfs(root.left, curr_depth + 1)",
+        "detail": "1302 Deepest Leaves Sum.Solution1",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
         "importPath": "1689 Partitioning Into Minimum Number Of Deci-Binary Numbers.Solution1",
         "description": "1689 Partitioning Into Minimum Number Of Deci-Binary Numbers.Solution1",
         "peekOfCode": "class Solution:\n    def minPartitions(self, n: str) -> int:\n        return int(max(n))",
